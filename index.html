@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle Mentora - O Guia Definitivo</title>
+    <!-- Importando as fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* === PALETA DE CORES (O Guia de Estilo da Helo) === */
+        :root {
+            --off-white: #F7F5F0;          /* Fundo principal */
+            --vermelho-bordo: #7A1723;     /* Destaques, Logos e Títulos */
+            --dourado: #C59B27;            /* Linhas e detalhes elegantes */
+            --amarelo-mostarda: #DCA73A;   /* Botões de conversão */
+            --cinza-chumbo: #2C2626;       /* Textos de leitura (mais suave que o preto) */
+        }
+
+        /* === RESET BÁSICO === */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--off-white);
+            color: var(--cinza-chumbo);
+            font-family: 'Montserrat', sans-serif; /* Fonte limpa para leitura */
+            line-height: 1.6;
+        }
+
+        /* === TIPOGRAFIA DE AUTORIDADE === */
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif; /* Fonte de revista/luxo para títulos */
+            color: var(--vermelho-bordo);
+            text-align: center;
+        }
+
+        /* === ESTRUTURA === */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Cabeçalho */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--dourado);
+            padding-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: var(--dourado);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Seção Principal */
+        .hero h2 {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+        }
+
+        /* Grid de Benefícios/Dores */
+        .grid-beneficios {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid var(--dourado);
+            border-radius: 8px;
+            padding: 25px;
+            width: 100%;
+            max-width: 230px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            border-top: 4px solid var(--vermelho-bordo);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--vermelho-bordo);
+        }
+
+        .card p {
+            font-size: 0.9rem;
+        }
+
+        /* Área de Vendas (CTA) */
+        .cta-box {
+            text-align: center;
+            margin-top: 40px;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            border-left: 6px solid var(--vermelho-bordo);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .preco {
+            font-size: 1.8rem;
+            color: var(--vermelho-bordo);
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .preco span {
+            text-decoration: line-through;
+            font-size: 1.1rem;
+            color: var(--cinza-chumbo);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: normal;
+        }
+
+        .btn-comprar {
+            display: inline-block;
+            background-color: var(--amarelo-mostarda);
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 16px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(220, 167, 58, 0.3);
+        }
+
+        .btn-comprar:hover {
+            background-color: #C59B27; /* Dourado no hover */
+            transform: translateY(-2px);
+        }
+
+        .garantia {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: var(--cinza-chumbo);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Cabeçalho / Logo -->
+        <header class="header">
+            <h1>Michelle Cerniciuti</h1>
+            <p>Palestras e Mentorias</p>
+        </header>
+
+        <!-- Título da Promessa -->
+        <section class="hero">
+            <h2>O Guia Definitivo para Transformação e Libertação Feminina</h2>
+        </section>
+
+        <!-- Blocos de Conteúdo -->
+        <section class="grid-beneficios">
+            <div class="card">
+                <h3>01. Cure Feridas</h3>
+                <p>Liberte-se do peso do passado e abra espaço para a sua verdadeira cura.</p>
+            </div>
+            <div class="card">
+                <h3>02. Fim da Sabotagem</h3>
+                <p>Descubra o caminho para uma autoconfiança inabalável e segura.</p>
+            </div>
+            <div class="card">
+                <h3>03. Assuma o Controle</h3>
+                <p>Recupere o controle absoluto da sua vida com postura e elegância.</p>
+            </div>
+        </section>
+
+        <!-- Chamada para Ação (Oferta) -->
+        <section class="cta-box">
+            <p class="preco"><span>De R$ 197,00</span><br>Por Apenas R$ 97,00</p>
+            
+            <a href="#" class="btn-comprar">QUERO TRANSFORMAR MINHA VIDA AGORA</a>
+            
+            <div class="garantia">
+                <span>✅ Acesso Imediato e Vitalício</span>
+                <span>🔒 Compra 100% Segura</span>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
