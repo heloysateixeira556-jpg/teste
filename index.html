@@ -3,208 +3,2031 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michelle Mentora - O Guia Definitivo</title>
-    <!-- Importando as fontes do Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    
+
+    <title>Michelle Cerniciuti | Mentoria para Mulheres</title>
+
+    <meta name="description" content="Descubra como transformar sua vida, fortalecer sua autoconfiança e assumir o controle da sua história com Michelle Cerniciuti.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
     <style>
-        /* === PALETA DE CORES (O Guia de Estilo da Helo) === */
+
+        /* =====================================================
+           PALETA
+        ===================================================== */
+
         :root {
-            --off-white: #F7F5F0;          /* Fundo principal */
-            --vermelho-bordo: #7A1723;     /* Destaques, Logos e Títulos */
-            --dourado: #C59B27;            /* Linhas e detalhes elegantes */
-            --amarelo-mostarda: #DCA73A;   /* Botões de conversão */
-            --cinza-chumbo: #2C2626;       /* Textos de leitura (mais suave que o preto) */
+            --off-white: #F8F5EF;
+            --branco: #FFFFFF;
+            --bordo: #741925;
+            --bordo-escuro: #4F0F18;
+            --dourado: #C59B27;
+            --dourado-claro: #E4C76A;
+            --mostarda: #D6A535;
+            --texto: #302828;
+            --cinza: #6F6767;
+            --verde: #25D366;
         }
 
-        /* === RESET BÁSICO === */
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
-            background-color: var(--off-white);
-            color: var(--cinza-chumbo);
-            font-family: 'Montserrat', sans-serif; /* Fonte limpa para leitura */
-            line-height: 1.6;
+            background: var(--off-white);
+            color: var(--texto);
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.7;
+            overflow-x: hidden;
         }
 
-        /* === TIPOGRAFIA DE AUTORIDADE === */
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif; /* Fonte de revista/luxo para títulos */
-            color: var(--vermelho-bordo);
-            text-align: center;
+        img {
+            max-width: 100%;
+            display: block;
         }
 
-        /* === ESTRUTURA === */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
+        a {
+            text-decoration: none;
         }
 
-        /* Cabeçalho */
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            border-bottom: 2px solid var(--dourado);
-            padding-bottom: 20px;
-        }
 
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 5px;
-        }
+        /* =====================================================
+           TIPOGRAFIA
+        ===================================================== */
 
-        .header p {
-            font-size: 1.1rem;
-            color: var(--dourado);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        /* Seção Principal */
-        .hero h2 {
-            font-size: 2.2rem;
-            margin-bottom: 40px;
-        }
-
-        /* Grid de Benefícios/Dores */
-        .grid-beneficios {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            margin-bottom: 50px;
-        }
-
-        .card {
-            background-color: #ffffff;
-            border: 1px solid var(--dourado);
-            border-radius: 8px;
-            padding: 25px;
-            width: 100%;
-            max-width: 230px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-            border-top: 4px solid var(--vermelho-bordo);
-        }
-
-        .card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            color: var(--vermelho-bordo);
-        }
-
-        .card p {
-            font-size: 0.9rem;
-        }
-
-        /* Área de Vendas (CTA) */
-        .cta-box {
-            text-align: center;
-            margin-top: 40px;
-            padding: 40px;
-            background-color: #ffffff;
-            border-radius: 12px;
-            border-left: 6px solid var(--vermelho-bordo);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-
-        .preco {
-            font-size: 1.8rem;
-            color: var(--vermelho-bordo);
-            font-weight: bold;
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: 'Playfair Display', serif;
         }
 
-        .preco span {
-            text-decoration: line-through;
-            font-size: 1.1rem;
-            color: var(--cinza-chumbo);
-            font-family: 'Montserrat', sans-serif;
-            font-weight: normal;
+
+        /* =====================================================
+           CONTAINER
+        ===================================================== */
+
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
         }
 
-        .btn-comprar {
-            display: inline-block;
-            background-color: var(--amarelo-mostarda);
-            color: #ffffff;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: 1.1rem;
-            padding: 16px 35px;
-            text-decoration: none;
-            border-radius: 50px;
-            margin-top: 25px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(220, 167, 58, 0.3);
-        }
 
-        .btn-comprar:hover {
-            background-color: #C59B27; /* Dourado no hover */
-            transform: translateY(-2px);
-        }
+        /* =====================================================
+           BOTÕES
+        ===================================================== */
 
-        .garantia {
-            margin-top: 20px;
-            font-size: 0.9rem;
-            color: var(--cinza-chumbo);
-            display: flex;
+        .btn {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
+
+            padding: 16px 30px;
+
+            border-radius: 50px;
+
+            font-weight: 700;
+            font-size: 15px;
+
+            transition: .3s ease;
+
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(
+                135deg,
+                var(--mostarda),
+                var(--dourado)
+            );
+
+            color: white;
+
+            box-shadow:
+                0 10px 25px rgba(197,155,39,.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 15px 35px rgba(197,155,39,.35);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--dourado);
+            color: var(--bordo);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--bordo);
+            color: white;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+
+            z-index: 10;
+
+            padding: 25px 0;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+
+            color: white;
+
+            font-size: 26px;
+
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: var(--dourado-claro);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            font-size: 13px;
+            font-weight: 500;
+            transition: .3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--dourado-claro);
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            min-height: 760px;
+
+            position: relative;
+
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(70,10,20,.98) 0%,
+                    rgba(90,15,28,.92) 45%,
+                    rgba(116,25,37,.72) 100%
+                );
+
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            right: -150px;
+            bottom: -200px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(228,199,106,.25);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+
+            max-width: 780px;
+
+            color: white;
+        }
+
+        .tag {
+            display: inline-block;
+
+            color: var(--dourado-claro);
+
+            font-size: 13px;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            font-weight: 600;
+
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 72px);
+
+            line-height: 1.05;
+
+            margin-bottom: 25px;
+
+            color: white;
+        }
+
+        .hero h1 span {
+            color: var(--dourado-claro);
+        }
+
+        .hero-text {
+            max-width: 650px;
+
+            font-size: 18px;
+
+            color: rgba(255,255,255,.82);
+
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .hero .btn-outline {
+            color: white;
+            border-color: rgba(255,255,255,.4);
+        }
+
+        .hero .btn-outline:hover {
+            background: white;
+            color: var(--bordo);
+        }
+
+        .hero-decoration {
+            position: absolute;
+
+            right: 7%;
+            bottom: 70px;
+
+            width: 240px;
+            height: 240px;
+
+            border: 1px solid rgba(228,199,106,.5);
+
+            border-radius: 50%;
+        }
+
+        .hero-decoration::before {
+            content: "";
+
+            position: absolute;
+
+            inset: 25px;
+
+            border: 1px solid rgba(228,199,106,.35);
+
+            border-radius: 50%;
+        }
+
+
+        /* =====================================================
+           SEÇÕES
+        ===================================================== */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-header {
+            text-align: center;
+
+            max-width: 700px;
+
+            margin: 0 auto 55px;
+        }
+
+        .section-label {
+            color: var(--dourado);
+
+            text-transform: uppercase;
+
+            letter-spacing: 3px;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            display: block;
+
+            margin-bottom: 12px;
+        }
+
+        .section-header h2 {
+            font-size: 42px;
+
+            line-height: 1.2;
+
+            color: var(--bordo);
+
+            margin-bottom: 18px;
+        }
+
+        .section-header p {
+            color: var(--cinza);
+        }
+
+
+        /* =====================================================
+           PROBLEMA
+        ===================================================== */
+
+        .problem-section {
+            background: white;
+        }
+
+        .problem-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .problem-card {
+            padding: 35px 28px;
+
+            background: var(--off-white);
+
+            border-radius: 14px;
+
+            border-bottom: 4px solid var(--dourado);
+
+            transition: .3s;
+        }
+
+        .problem-card:hover {
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 15px 35px rgba(0,0,0,.07);
+        }
+
+        .problem-number {
+            font-family: 'Playfair Display', serif;
+
+            font-size: 40px;
+
+            color: var(--dourado);
+
+            margin-bottom: 10px;
+        }
+
+        .problem-card h3 {
+            color: var(--bordo);
+
+            font-size: 23px;
+
+            margin-bottom: 10px;
+        }
+
+        .problem-card p {
+            color: var(--cinza);
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           SOBRE MICHELLE
+        ===================================================== */
+
+        .about {
+            background: var(--off-white);
+        }
+
+        .about-grid {
+            display: grid;
+
+            grid-template-columns: .8fr 1.2fr;
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+        .about-photo {
+            min-height: 500px;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--bordo),
+                    var(--bordo-escuro)
+                );
+
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+        .about-photo::before {
+            content: "";
+
+            position: absolute;
+
+            inset: 20px;
+
+            border: 1px solid var(--dourado);
+
+            border-radius: 15px;
+        }
+
+        .about-photo-text {
+            position: relative;
+
+            text-align: center;
+
+            color: white;
+
+            padding: 30px;
+        }
+
+        .about-photo-text strong {
+            display: block;
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 45px;
+
+            color: var(--dourado-claro);
+        }
+
+        .about-photo-text span {
+            font-size: 13px;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+        }
+
+        .about-content h2 {
+            color: var(--bordo);
+
+            font-size: 45px;
+
+            line-height: 1.15;
+
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: var(--cinza);
+
+            margin-bottom: 18px;
+        }
+
+        .signature {
+            margin-top: 25px;
+
+            color: var(--bordo);
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 28px;
+        }
+
+
+        /* =====================================================
+           BENEFÍCIOS
+        ===================================================== */
+
+        .benefits {
+            background: white;
+        }
+
+        .benefit-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+        .benefit {
+            display: flex;
+
+            gap: 20px;
+
+            padding: 28px;
+
+            border: 1px solid #eee;
+
+            border-radius: 12px;
+
+            transition: .3s;
+        }
+
+        .benefit:hover {
+            border-color: var(--dourado);
+
+            transform: translateY(-4px);
+        }
+
+        .benefit-icon {
+            min-width: 50px;
+
+            height: 50px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: rgba(197,155,39,.12);
+
+            color: var(--dourado);
+
+            font-size: 22px;
+        }
+
+        .benefit h3 {
+            color: var(--bordo);
+
+            margin-bottom: 5px;
+
+            font-size: 21px;
+        }
+
+        .benefit p {
+            color: var(--cinza);
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           TRANSFORMAÇÃO
+        ===================================================== */
+
+        .transformation {
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--bordo),
+                    var(--bordo-escuro)
+                );
+
+            color: white;
+        }
+
+        .transformation .section-header h2 {
+            color: white;
+        }
+
+        .transformation .section-header p {
+            color: rgba(255,255,255,.75);
+        }
+
+        .steps {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 30px;
+        }
+
+        .step {
+            text-align: center;
+
+            padding: 30px;
+        }
+
+        .step-number {
+            width: 65px;
+            height: 65px;
+
+            margin: auto auto 20px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border: 1px solid var(--dourado);
+
+            color: var(--dourado-claro);
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 24px;
+        }
+
+        .step h3 {
+            color: white;
+
+            font-size: 23px;
+
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            color: rgba(255,255,255,.7);
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           DEPOIMENTOS
+        ===================================================== */
+
+        .testimonials {
+            background: var(--off-white);
+        }
+
+        .testimonial-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .testimonial {
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 14px;
+
+            box-shadow:
+                0 10px 30px rgba(0,0,0,.04);
+        }
+
+        .stars {
+            color: var(--dourado);
+
+            letter-spacing: 3px;
+
+            margin-bottom: 15px;
+        }
+
+        .testimonial p {
+            font-family: 'Playfair Display', serif;
+
+            font-size: 17px;
+
+            font-style: italic;
+
+            color: var(--texto);
+
+            margin-bottom: 20px;
+        }
+
+        .testimonial strong {
+            color: var(--bordo);
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           OFERTA
+        ===================================================== */
+
+        .offer {
+            background: white;
+        }
+
+        .offer-box {
+            max-width: 850px;
+
+            margin: auto;
+
+            padding: 60px 45px;
+
+            text-align: center;
+
+            border-radius: 20px;
+
+            border: 2px solid var(--dourado);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #fff,
+                    #fbf8f1
+                );
+
+            box-shadow:
+                0 20px 50px rgba(0,0,0,.08);
+
+            position: relative;
+        }
+
+        .offer-badge {
+            position: absolute;
+
+            top: -18px;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            background: var(--bordo);
+
+            color: white;
+
+            padding: 8px 22px;
+
+            border-radius: 30px;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+        }
+
+        .offer-box h2 {
+            color: var(--bordo);
+
+            font-size: 42px;
+
+            margin-bottom: 15px;
+        }
+
+        .offer-box > p {
+            color: var(--cinza);
+
+            max-width: 600px;
+
+            margin: auto auto 25px;
+        }
+
+        .old-price {
+            display: block;
+
+            text-decoration: line-through;
+
+            color: var(--cinza);
+
+            font-size: 18px;
+        }
+
+        .price {
+            font-family: 'Playfair Display', serif;
+
+            font-size: 58px;
+
+            font-weight: 700;
+
+            color: var(--bordo);
+
+            line-height: 1;
+
+            margin: 10px 0;
+        }
+
+        .price small {
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: 18px;
+
+            font-weight: 500;
+        }
+
+        .offer-list {
+            list-style: none;
+
+            max-width: 500px;
+
+            margin: 30px auto;
+
+            text-align: left;
+        }
+
+        .offer-list li {
+            padding: 9px 0;
+
+            color: var(--texto);
+
+            font-size: 14px;
+        }
+
+        .offer-list li::before {
+            content: "✓";
+
+            color: var(--dourado);
+
+            font-weight: bold;
+
+            margin-right: 10px;
+        }
+
+        .security {
+            margin-top: 20px;
+
+            color: var(--cinza);
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        .faq {
+            background: var(--off-white);
+        }
+
+        .faq-container {
+            max-width: 800px;
+
+            margin: auto;
+        }
+
+        details {
+            background: white;
+
+            margin-bottom: 12px;
+
+            border-radius: 10px;
+
+            border: 1px solid #eee;
+
+            overflow: hidden;
+        }
+
+        summary {
+            cursor: pointer;
+
+            padding: 20px 25px;
+
+            color: var(--bordo);
+
+            font-weight: 600;
+
+            list-style: none;
+
+            position: relative;
+
+            padding-right: 50px;
+        }
+
+        summary::after {
+            content: "+";
+
+            position: absolute;
+
+            right: 25px;
+
+            font-size: 22px;
+
+            color: var(--dourado);
+        }
+
+        details[open] summary::after {
+            content: "−";
+        }
+
+        details p {
+            padding: 0 25px 22px;
+
+            color: var(--cinza);
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           CTA FINAL
+        ===================================================== */
+
+        .final-cta {
+            padding: 100px 0;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--bordo),
+                    var(--bordo-escuro)
+                );
+
+            text-align: center;
+
+            color: white;
+        }
+
+        .final-cta h2 {
+            color: white;
+
+            font-size: 48px;
+
+            max-width: 750px;
+
+            margin: auto auto 20px;
+        }
+
+        .final-cta p {
+            max-width: 650px;
+
+            margin: auto auto 30px;
+
+            color: rgba(255,255,255,.75);
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            background: #26090D;
+
+            color: rgba(255,255,255,.6);
+
+            padding: 35px 0;
+
+            text-align: center;
+
+            font-size: 12px;
+        }
+
+        footer strong {
+            color: var(--dourado-claro);
+        }
+
+
+        /* =====================================================
+           WHATSAPP
+        ===================================================== */
+
+        .whatsapp {
+            position: fixed;
+
+            right: 22px;
+            bottom: 22px;
+
+            width: 60px;
+            height: 60px;
+
+            border-radius: 50%;
+
+            background: var(--verde);
+
+            color: white;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 28px;
+
+            box-shadow:
+                0 8px 25px rgba(0,0,0,.2);
+
+            z-index: 100;
+
+            transition: .3s;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.1);
+        }
+
+
+        /* =====================================================
+           ANIMAÇÃO
+        ===================================================== */
+
+        @keyframes aparecer {
+
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+        .hero-content {
+            animation: aparecer 1s ease;
+        }
+
+
+        /* =====================================================
+           RESPONSIVO
+        ===================================================== */
+
+        @media (max-width: 850px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                min-height: 700px;
+            }
+
+            .hero-decoration {
+                opacity: .3;
+                right: -100px;
+            }
+
+            .problem-grid,
+            .testimonial-grid,
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+
+                gap: 40px;
+            }
+
+            .about-photo {
+                min-height: 350px;
+            }
+
+            .benefit-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header h2,
+            .about-content h2 {
+                font-size: 34px;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            section {
+                padding: 65px 0;
+            }
+
+            .hero {
+                min-height: 720px;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .hero-text {
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .offer-box {
+                padding: 50px 22px;
+            }
+
+            .offer-box h2 {
+                font-size: 32px;
+            }
+
+            .price {
+                font-size: 48px;
+            }
+
+            .final-cta h2 {
+                font-size: 35px;
+            }
+
+            .whatsapp {
+                width: 55px;
+                height: 55px;
+                right: 15px;
+                bottom: 15px;
+            }
+
         }
 
     </style>
 </head>
+
+
 <body>
 
-    <div class="container">
-        
-        <!-- Cabeçalho / Logo -->
-        <header class="header">
-            <h1>Michelle Cerniciuti</h1>
-            <p>Palestras e Mentorias</p>
-        </header>
 
-        <!-- Título da Promessa -->
-        <section class="hero">
-            <h2>O Guia Definitivo para Transformação e Libertação Feminina</h2>
-        </section>
+    <!-- =====================================================
+         HEADER
+    ===================================================== -->
 
-        <!-- Blocos de Conteúdo -->
-        <section class="grid-beneficios">
-            <div class="card">
-                <h3>01. Cure Feridas</h3>
-                <p>Liberte-se do peso do passado e abra espaço para a sua verdadeira cura.</p>
-            </div>
-            <div class="card">
-                <h3>02. Fim da Sabotagem</h3>
-                <p>Descubra o caminho para uma autoconfiança inabalável e segura.</p>
-            </div>
-            <div class="card">
-                <h3>03. Assuma o Controle</h3>
-                <p>Recupere o controle absoluto da sua vida com postura e elegância.</p>
-            </div>
-        </section>
+    <header>
 
-        <!-- Chamada para Ação (Oferta) -->
-        <section class="cta-box">
-            <p class="preco"><span>De R$ 197,00</span><br>Por Apenas R$ 97,00</p>
-            
-            <a href="#" class="btn-comprar">QUERO TRANSFORMAR MINHA VIDA AGORA</a>
-            
-            <div class="garantia">
-                <span>✅ Acesso Imediato e Vitalício</span>
-                <span>🔒 Compra 100% Segura</span>
-            </div>
-        </section>
+        <div class="container nav">
 
-    </div>
+            <div class="logo">
+                Michelle <span>Cerniciuti</span>
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="#beneficios">Benefícios</a>
+                </li>
+
+                <li>
+                    <a href="#transformacao">Transformação</a>
+                </li>
+
+                <li>
+                    <a href="#oferta">Mentoria</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+    ===================================================== -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <span class="tag">
+                    Palestras • Mentorias • Transformação
+                </span>
+
+                <h1>
+                    Você não nasceu para
+                    <span>viver se diminuindo.</span>
+                </h1>
+
+                <p class="hero-text">
+
+                    Chegou o momento de romper ciclos, fortalecer sua
+                    autoestima e assumir o protagonismo da sua própria
+                    história.
+
+                    <strong>
+                        Descubra a mulher que existe por trás de todos
+                        os medos que você aprendeu a carregar.
+                    </strong>
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#oferta" class="btn btn-primary">
+                        QUERO TRANSFORMAR MINHA VIDA
+                    </a>
+
+                    <a href="#sobre" class="btn btn-outline">
+                        CONHECER A MICHELLE
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-decoration"></div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROBLEMAS
+    ===================================================== -->
+
+    <section class="problem-section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    Talvez você esteja vivendo isso
+                </span>
+
+                <h2>
+                    Cansada de começar de novo?
+                </h2>
+
+                <p>
+                    Muitas mulheres passam anos tentando mudar suas vidas,
+                    mas continuam presas aos mesmos padrões.
+                </p>
+
+            </div>
+
+
+            <div class="problem-grid">
+
+
+                <div class="problem-card">
+
+                    <div class="problem-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Falta de confiança
+                    </h3>
+
+                    <p>
+                        Você sabe que é capaz de muito mais, mas algo
+                        dentro de você ainda faz questionar seu próprio valor.
+                    </p>
+
+                </div>
+
+
+                <div class="problem-card">
+
+                    <div class="problem-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Medo de se posicionar
+                    </h3>
+
+                    <p>
+                        Você coloca todo mundo em primeiro lugar e acaba
+                        deixando seus próprios sonhos para depois.
+                    </p>
+
+                </div>
+
+
+                <div class="problem-card">
+
+                    <div class="problem-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Ciclos que se repetem
+                    </h3>
+
+                    <p>
+                        Os mesmos comportamentos, inseguranças e padrões
+                        continuam aparecendo na sua vida.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SOBRE
+    ===================================================== -->
+
+    <section class="about" id="sobre">
+
+        <div class="container">
+
+            <div class="about-grid">
+
+
+                <div class="about-photo">
+
+                    <div class="about-photo-text">
+
+                        <strong>MC</strong>
+
+                        <span>
+                            Michelle Cerniciuti
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <span class="section-label">
+                        Quem está ao seu lado
+                    </span>
+
+                    <h2>
+                        Uma nova mulher começa quando você decide se escolher.
+                    </h2>
+
+                    <p>
+                        Michelle Cerniciuti atua com palestras e mentorias
+                        voltadas para mulheres que desejam transformar sua
+                        relação consigo mesmas e com a própria história.
+                    </p>
+
+                    <p>
+                        Seu propósito é ajudar mulheres a reconhecerem
+                        sua força, romperem padrões que as limitam e
+                        construírem uma vida com mais consciência,
+                        confiança e protagonismo.
+                    </p>
+
+                    <p>
+                        Não se trata de se tornar outra pessoa.
+                        Trata-se de finalmente permitir que você seja
+                        quem sempre teve potencial para ser.
+                    </p>
+
+                    <div class="signature">
+                        Michelle Cerniciuti
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         BENEFÍCIOS
+    ===================================================== -->
+
+    <section class="benefits" id="beneficios">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    O que você vai desenvolver
+                </span>
+
+                <h2>
+                    Comece a construir uma nova versão de você
+                </h2>
+
+                <p>
+                    Uma jornada para fortalecer sua mente,
+                    sua postura e sua confiança.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-grid">
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Autoconfiança
+                        </h3>
+
+                        <p>
+                            Aprenda a confiar mais em suas decisões
+                            e reconhecer seu próprio valor.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ♡
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Amor-próprio
+                        </h3>
+
+                        <p>
+                            Desenvolva uma relação mais saudável
+                            e respeitosa com você mesma.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ◆
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Posicionamento
+                        </h3>
+
+                        <p>
+                            Aprenda a colocar limites e se posicionar
+                            sem culpa.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ✧
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Protagonismo
+                        </h3>
+
+                        <p>
+                            Pare de apenas reagir à vida e comece
+                            a tomar decisões conscientes sobre seu futuro.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ∞
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Quebra de padrões
+                        </h3>
+
+                        <p>
+                            Identifique comportamentos que impedem
+                            seu crescimento.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ★
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Clareza
+                        </h3>
+
+                        <p>
+                            Entenda onde você está e qual direção
+                            deseja seguir.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TRANSFORMAÇÃO
+    ===================================================== -->
+
+    <section class="transformation" id="transformacao">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    Sua jornada
+                </span>
+
+                <h2>
+                    Da mulher que sobrevive para a mulher que escolhe.
+                </h2>
+
+                <p>
+                    Uma transformação começa com uma decisão:
+                    parar de colocar você mesma em último lugar.
+                </p>
+
+            </div>
+
+
+            <div class="steps">
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Despertar
+                    </h3>
+
+                    <p>
+                        Reconheça os padrões, medos e crenças que
+                        estão influenciando suas escolhas.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Reconstruir
+                    </h3>
+
+                    <p>
+                        Desenvolva uma nova percepção sobre seu
+                        valor, sua capacidade e seu potencial.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Assumir
+                    </h3>
+
+                    <p>
+                        Comece a agir com mais segurança,
+                        clareza e protagonismo.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         DEPOIMENTOS
+    ===================================================== -->
+
+    <section class="testimonials">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    Histórias de transformação
+                </span>
+
+                <h2>
+                    Quando você se transforma, tudo começa a mudar.
+                </h2>
+
+            </div>
+
+
+            <div class="testimonial-grid">
+
+
+                <div class="testimonial">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "Eu finalmente comecei a enxergar que não
+                        precisava continuar vivendo para agradar todo mundo."
+                    </p>
+
+                    <strong>
+                        — Depoimento de aluna
+                    </strong>
+
+                </div>
+
+
+                <div class="testimonial">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "A mentoria me fez olhar para mim de uma forma
+                        completamente diferente."
+                    </p>
+
+                    <strong>
+                        — Depoimento de aluna
+                    </strong>
+
+                </div>
+
+
+                <div class="testimonial">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "Hoje eu consigo me posicionar e tomar decisões
+                        sem sentir que estou sempre fazendo algo errado."
+                    </p>
+
+                    <strong>
+                        — Depoimento de aluna
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         OFERTA
+    ===================================================== -->
+
+    <section class="offer" id="oferta">
+
+        <div class="container">
+
+            <div class="offer-box">
+
+                <div class="offer-badge">
+                    CONDIÇÃO ESPECIAL
+                </div>
+
+                <span class="section-label">
+                    Comece sua transformação
+                </span>
+
+                <h2>
+                    O primeiro passo começa agora.
+                </h2>
+
+                <p>
+                    Tenha acesso à experiência e aos conteúdos preparados
+                    para ajudar você a dar os primeiros passos em direção
+                    a uma vida com mais confiança e protagonismo.
+                </p>
+
+
+                <span class="old-price">
+                    De R$ 197,00
+                </span>
+
+                <div class="price">
+                    R$ 97<small>,00</small>
+                </div>
+
+
+                <ul class="offer-list">
+
+                    <li>
+                        Acesso ao conteúdo da mentoria
+                    </li>
+
+                    <li>
+                        Conteúdos para desenvolvimento pessoal
+                    </li>
+
+                    <li>
+                        Materiais de apoio
+                    </li>
+
+                    <li>
+                        Acesso imediato
+                    </li>
+
+                    <li>
+                        Acesso vitalício
+                    </li>
+
+                </ul>
+
+
+                <!-- TROQUE O # PELO LINK DA KIWIFY -->
+
+                <a href="#" class="btn btn-primary">
+
+                    QUERO COMEÇAR MINHA TRANSFORMAÇÃO
+
+                </a>
+
+
+                <div class="security">
+
+                    🔒 Compra segura • Acesso imediato • Acesso vitalício
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FAQ
+    ===================================================== -->
+
+    <section class="faq">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    Ainda tem dúvidas?
+                </span>
+
+                <h2>
+                    Perguntas frequentes
+                </h2>
+
+            </div>
+
+
+            <div class="faq-container">
+
+
+                <details>
+
+                    <summary>
+                        Para quem é essa mentoria?
+                    </summary>
+
+                    <p>
+                        Para mulheres que desejam desenvolver sua
+                        autoconfiança, fortalecer sua autoestima,
+                        romper padrões e assumir mais protagonismo
+                        sobre suas escolhas.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Preciso ter experiência anterior?
+                    </summary>
+
+                    <p>
+                        Não. A proposta é justamente acompanhar você
+                        a partir do momento em que está, oferecendo
+                        conteúdos e direcionamentos para sua jornada.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        O acesso é imediato?
+                    </summary>
+
+                    <p>
+                        Sim. Após a confirmação da compra, o acesso
+                        será disponibilizado conforme as condições
+                        da plataforma utilizada.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Por quanto tempo terei acesso?
+                    </summary>
+
+                    <p>
+                        A oferta apresentada nesta página contempla
+                        acesso vitalício ao conteúdo.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        A mentoria substitui acompanhamento psicológico?
+                    </summary>
+
+                    <p>
+                        Não. A mentoria possui finalidade educacional
+                        e de desenvolvimento pessoal e não substitui
+                        acompanhamento psicológico ou médico.
+                    </p>
+
+                </details>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CTA FINAL
+    ===================================================== -->
+
+    <section class="final-cta">
+
+        <div class="container">
+
+            <h2>
+                A mulher que você deseja ser começa com a decisão de se escolher.
+            </h2>
+
+            <p>
+                Você pode continuar esperando o momento perfeito
+                ou começar hoje a construir uma nova história.
+            </p>
+
+            <a href="#oferta" class="btn btn-primary">
+
+                EU ESCOLHO COMEÇAR
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 <strong>Michelle Cerniciuti</strong>.
+                Todos os direitos reservados.
+            </p>
+
+            <p>
+                Palestras • Mentorias • Desenvolvimento Feminino
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         WHATSAPP
+    ===================================================== -->
+
+    <!-- TROQUE 5511999999999 PELO NÚMERO REAL -->
+
+    <a
+        href="https://wa.me/5511999999999"
+        class="whatsapp"
+        target="_blank"
+        aria-label="Falar com Michelle pelo WhatsApp"
+    >
+        ☎
+    </a>
+
 
 </body>
 </html>
